@@ -68,5 +68,19 @@
         font-size: 1.3rem;
         margin-left: 1.5rem;
         color: #555;
+
+
+        a:link,
+        a:visited {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--color-primary);
+            font-weight: 700;
+            border-bottom: .1rem solid var(--color-primary);
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
 }
