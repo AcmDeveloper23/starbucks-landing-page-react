@@ -6,7 +6,7 @@ export const homePageData = [
         imgUrl: "sec-1-rewards.jpeg",
         boxColor: "#1E3932",
         textColor: "#fff",
-        textSize: 1.6
+        fontSmall: true
     },
     {
         title: "Summer’s brightest new drinks",
@@ -16,7 +16,7 @@ export const homePageData = [
         imgUrl: "sec-2-drinks.jpeg",
         boxColor: "#FA91AA",
         textColor: "#1E3932",
-        textSize: 5
+        fontSmall: false
     },
     {
         title: "Say hello to a new favorite",
@@ -26,7 +26,7 @@ export const homePageData = [
         imgUrl: "sec-burger.jpeg",
         boxColor: "#D4E9E2",
         textColor: "#1E3932",
-        textSize: 5
+        fontSmall: false
     },
     {
         title: "Hooray for cookies and cake",
@@ -36,7 +36,7 @@ export const homePageData = [
         imgUrl: "sec-3-candy.jpeg",
         boxColor: "#007042",
         textColor: "#fff",
-        textSize: 5
+        fontSmall: false
     },
     {
         title: "Lean into that summer feeling",
@@ -46,6 +46,6 @@ export const homePageData = [
         imgUrl: "sec-4-uber-eats.webp",
         boxColor: "D4E9E2",
         textColor: "#1E3932",
-        textSize: 5
+        fontSmall: false
     },
 ]

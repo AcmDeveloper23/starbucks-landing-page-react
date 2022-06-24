@@ -4,7 +4,7 @@ import Button from '../Button';
 
 const ContentBox = ({ item, index }) => {
 
-  const { title, description, btnText, btnClassType, imgUrl, boxColor, textColor, textSize } = item;
+  const { title, description, btnText, btnClassType, imgUrl, boxColor, textColor, fontSmall } = item;
 
   const imageBox = () => (
     <div className="content-imgBox">
@@ -14,7 +14,7 @@ const ContentBox = ({ item, index }) => {
 
   const textBox = () => (
     <div className="content-textBox" style={{ color: textColor }}>
-      <h1 style={{ fontSize: `${textSize}rem` }}>{title}</h1>
+      <h1 className={`content-textBox__text ${fontSmall && `content-textBox__text--small`}`}>{title}</h1>
       {description && <p>{description}</p>}
       <Button text={btnText} classType={btnClassType} />
     </div>
