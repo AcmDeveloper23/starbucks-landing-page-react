@@ -13,6 +13,8 @@ const Footer = () => {
         TwitterLogo
     } = Assets;
 
+    const date = new Date().getFullYear();
+
     return (
         <footer className="footer">
             <nav className="footer-socialMedia__lists">
@@ -54,7 +56,7 @@ const Footer = () => {
                 </li>
             </ul>
 
-            <p className="footer__copyright-text">&copy; 2022 Starbucks Coffe Company. Made by <a href="https://github.com/AcmDeveloper23" target="_blank" rel="noreferrer">ACM</a>.</p>
+            <p className="footer__copyright-text">&copy; {date} Starbucks Coffe Company. Made by <a href="https://github.com/AcmDeveloper23" target="_blank" rel="noreferrer">ACM</a>.</p>
         </footer>
     )
 }

@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+    z-index: 9999;
     font-size: 1.4rem;
     letter-spacing: .15rem;
     font-weight: 800;
@@ -68,51 +70,117 @@
 
 .hamburger {
     cursor: pointer;
-    width: 24px;
-    height: 24px;
+    width: 2.4rem;
+    height: 2.4rem;
     position: relative;
     background: none;
     border: none;
     z-index: 10;
-    transition: all 0.25s;
+    transition: all .25s;
     display: none;
-}
 
-.hamburger-top,
-.hamburger-middle,
-.hamburger-bottom {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 24px;
-  height: 2px;
-  background: #000;
-  transform: rotate(0);
-  transition: all 0.5s;
-}
-
-.hamburger-middle {
-  transform: translateY(7px);
-}
-
-.hamburger-bottom {
-  transform: translateY(14px);
-}
-
-.open .hamburger-top {
-    transform: rotate(45deg) translateY(6px) translateX(6px);
-}
-  
-.open .hamburger-middle {
-    display: none;
-}
-  
-.open .hamburger-bottom {
-    transform: rotate(-45deg) translateY(6px) translateX(-6px);
-}
-
-@media (max-width: 768px) {
-    .hamburger {
-      display: block;
+    &__top,
+    &__middle,
+    &__bottom {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 2.4rem;
+        height: .2rem;
+        background: #000;
+        transform: rotate(0);
+        transition: all 0.5s;
     }
+
+    &__middle {
+        transform: translateY(.7rem);
+    }
+
+    &__top {
+        transform: translateY(1.4rem);
+    }
+
+    &--open .hamburger__top {
+        transform: rotate(45deg) translateY(.6rem) translateX(.6rem);
+    }
+      
+    &--open .hamburger__middle {
+        display: none;
+    }
+      
+    &--open .hamburger__bottom {
+        transform: rotate(-45deg) translateY(6px) translateX(-6px);
+    }
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+
+.mobile-nav {
+    position: fixed;
+    right: 0;
+    z-index: 999;
+    min-height: 100vh;
+    width: 80%;
+    background-color: #fff;
+    padding: 2rem;
+    transition : all .2s;
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+
+        border-bottom: .1rem solid rgb(0 0 0 / 10%);
+    }
+
+    &__item {
+        list-style: none;
+        padding: 2rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        font-size: 2rem;
+        color: #000;
+
+    }
+
+    &__join-menu {
+        display: inline-block;
+        font-size: 1.8rem;
+
+        button {
+            margin: 3rem 2rem;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 2rem;
+        gap: 1rem;
+
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: #000;
+            font-weight: 700;
+        }
+    }
+
+    &__icon {
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+}
+
+.hidden {
+    transform: translateX(100%);
+}
+
+.no-scroll {
+    overflow: hidden;
 }
