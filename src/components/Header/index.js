@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Header.scss";
 import Assets from "../../assets";
 import Button from '../Button';
 
 const Header = () => {
 
+    const [toggleMenu, setToggleMenu] = useState(false);
+
     const { Logo, MarkerIcon } = Assets;
+
+    const toogleMobileMenu = () => {
+        const btn = document.getElementById('menu-btn')
+        const nav = document.getElementById('header')
+
+        btn.classList.toggle('open')
+        nav.classList.toggle('hidden')
+        document.body.classList.toggle('no-scroll')
+    }
 
     return (
         <header className="header">
@@ -25,6 +36,13 @@ const Header = () => {
                 <Button text="Sign in" classType="white" />
                 <Button text="Join now" classType="black" />
             </nav>
+
+            {/* <!-- Hamburger Menu --> */}
+            <button onClick={toogleMobileMenu} type="button" className="hamburger" id="menu-btn">
+                <span className="hamburger-top"></span>
+                <span className="hamburger-middle"></span>
+                <span className="hamburger-bottom"></span>
+            </button>
         </header>
     )
 }

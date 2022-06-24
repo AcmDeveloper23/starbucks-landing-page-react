@@ -15,6 +15,10 @@
         width: 5rem;
         height: 5rem;
         cursor: pointer;
+
+        @media (max-width: 768px) {
+            margin-right: auto;
+        }
     }
 
     &__list {
@@ -24,6 +28,10 @@
         &--menu {
             margin-left: 3.75rem;
             margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            display: none;
         }
     }
 
@@ -56,6 +64,55 @@
             text-transform: none;
         }
     }
+}
 
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background: none;
+    border: none;
+    z-index: 10;
+    transition: all 0.25s;
+    display: none;
+}
 
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+  
+.open .hamburger-middle {
+    display: none;
+}
+  
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
 }
