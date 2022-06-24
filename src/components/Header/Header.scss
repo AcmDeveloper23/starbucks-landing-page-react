@@ -1,0 +1,65 @@
+.header {
+    font-size: 1.4rem;
+    letter-spacing: .15rem;
+    font-weight: 800;
+    height: 7rem;
+    padding: 5rem 4rem;
+    //border-bottom: .1rem solid rgba(0, 0, 0, 0.356);
+    box-shadow: 0 .1rem .3rem rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+    0 0 2px rgb(0 0 0 / 7%);
+
+    display: flex;
+    align-items: center;
+
+    &__img {
+        width: 5rem;
+        height: 5rem;
+        cursor: pointer;
+    }
+
+    &__list {
+        display: flex;
+        gap: 2rem;
+
+        &--menu {
+            margin-left: 3.75rem;
+            margin-right: auto;
+        }
+
+        &--btn {
+
+        }
+    }
+
+    &__item, 
+    &__item:link, 
+    &__item:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #000;
+
+        &:hover,
+        &:active {
+            color: var(--color-primary);
+        }
+    }
+
+    &__marker {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &__item--store {
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+        
+        span {
+            font-weight: bold;
+            letter-spacing: 0;
+            text-transform: none;
+        }
+    }
+
+
+}

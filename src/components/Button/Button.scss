@@ -1,0 +1,41 @@
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: .7rem 1.6rem;
+    background: none;
+    border: .1rem solid #000;
+    border-radius: 5rem;
+    text-align: center;
+    font-size: inherit;
+    transition: all .2s;
+
+    &--white {
+        border-color: #000;
+        color: #000;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.06);
+        }
+    }
+
+    &--black {
+        background-color: #000;
+        color: #fff;
+
+        &:hover {
+            background-color: #333;
+        }
+    }
+
+    &--outline-white {
+        border-color: #fff;
+        color: #fff;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.205);
+        }
+    }
+
+    
+    
+}

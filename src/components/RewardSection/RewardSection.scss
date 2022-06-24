@@ -1,0 +1,27 @@
+.rewards {
+    background-color: var(--color-rewards);
+    color: #fff;
+    //padding: 20rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &-imgBox {
+        
+        &__img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-textBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1.4rem;
+
+        h1 {
+            font-size: 1.6rem;
+        }
+    }
+}
