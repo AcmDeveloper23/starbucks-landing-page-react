@@ -22,7 +22,6 @@ const ContentBox = ({ item, index }) => {
 
   return (
     <section style={{ backgroundColor: boxColor }} className="content">
-      {console.log("Key", index)}
       {index % 2 === 0 ? (
         <>
           {imageBox()}
@@ -34,8 +33,6 @@ const ContentBox = ({ item, index }) => {
           {imageBox()}
         </>
       )}
-
-
     </section>
   )
 }

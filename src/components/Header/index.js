@@ -8,7 +8,7 @@ const Header = () => {
     const { Logo, MarkerIcon } = Assets;
 
     return (
-        <div className="header">
+        <header className="header">
             <img src={Logo} className="header__img" alt="Starbucks Logo" />
 
             <nav className="header__list header__list--menu">
@@ -25,7 +25,7 @@ const Header = () => {
                 <Button text="Sign in" classType="white" />
                 <Button text="Join now" classType="black" />
             </nav>
-        </div>
+        </header>
     )
 }
 
