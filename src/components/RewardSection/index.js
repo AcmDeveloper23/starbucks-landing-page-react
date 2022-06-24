@@ -14,7 +14,7 @@ const RewardSection = () => {
             </div>
             <div className="rewards-textBox">
                 <h1>Summer is brighter with free treats.*</h1>
-                <Button classType="btn--outline-white" text="Join Starbucks Rewards" />
+                <Button classType="outline-white" text="Join Starbucks Rewards" />
             </div>
         </section>
     )

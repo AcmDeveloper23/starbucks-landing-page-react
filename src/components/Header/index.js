@@ -22,8 +22,8 @@ const Header = () => {
                     <img src={MarkerIcon} className="header__marker" alt="location marker icon" />
                     <span>Find a store</span>
                 </a>
-                <Button text="Sign in" classType="btn--white" />
-                <Button text="Join now" classType="btn--black" />
+                <Button text="Sign in" classType="white" />
+                <Button text="Join now" classType="black" />
             </nav>
         </div>
     )
