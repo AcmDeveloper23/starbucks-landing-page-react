@@ -39,12 +39,13 @@
         gap: 2rem;
         list-style: none;
         font-size: 1.4rem;
+        margin-bottom: 1.2rem;
 
         &__link:link,
         &__link:active {
             text-decoration: none;
             color: #000;
-            font-weight: 700;
+            font-weight: bold;
             margin-left: 1.5rem;
         }
     }
@@ -52,6 +53,6 @@
     &__copyright-text {
         font-size: 1.3rem;
         margin-left: 1.5rem;
-        color: #888;
+        color: #555;
     }
 }
